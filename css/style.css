@@ -1,0 +1,105 @@
+* { box-sizing: border-box; margin: 0; padding: 0; font-family: Arial, sans-serif; }
+
+body { background: #f4f6f9; }
+
+.container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 18px;
+}
+
+.card {
+  width: 100%;
+  max-width: 520px;
+  background: #fff;
+  border-radius: 14px;
+  padding: 22px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+.center { text-align: center; }
+
+.title { margin-bottom: 8px; }
+.sub { color: #555; margin-bottom: 16px; }
+
+.form { display: flex; flex-direction: column; gap: 10px; }
+
+.label { font-size: 14px; color: #333; margin-top: 6px; }
+
+.input {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #cfd6e0;
+  border-radius: 10px;
+  outline: none;
+}
+.input:focus { border-color: #2c74ff; }
+
+.btn {
+  padding: 10px 14px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  background: #e9edf5;
+}
+.btn:hover { filter: brightness(0.98); }
+
+.primary { background: #2c74ff; color: white; }
+.primary:disabled { opacity: 0.6; cursor: not-allowed; }
+
+.row { margin-top: 14px; }
+.link { text-decoration: none; color: #2c74ff; font-size: 14px; }
+
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  align-items: center;
+}
+
+.scoreBox {
+  background: #f1f6ff;
+  border: 1px solid #d7e6ff;
+  padding: 10px 12px;
+  border-radius: 12px;
+  font-weight: bold;
+}
+
+.divider { height: 1px; background: #eee; margin: 16px 0; }
+
+.qCount { color: #666; margin-bottom: 8px; font-size: 14px; }
+.question { margin-bottom: 14px; }
+
+.options { display: grid; gap: 10px; margin-bottom: 12px; }
+
+.optionBtn {
+  width: 100%;
+  text-align: left;
+  padding: 12px;
+  border-radius: 12px;
+  border: 1px solid #cfd6e0;
+  background: #fff;
+  cursor: pointer;
+  transition: 0.15s;
+}
+.optionBtn:hover { background: #f7f9fc; }
+
+.optionBtn.selected { border-color: #2c74ff; background: #f1f6ff; }
+
+/* Correct/Incorrect styles */
+.optionBtn.correct { border-color: #1f9d55; background: #eaf8f0; }
+.optionBtn.wrong { border-color: #e02424; background: #fdecec; }
+
+.msg { padding: 10px 12px; border-radius: 10px; margin-top: 8px; }
+.msg.success { background: #eaf8f0; color: #167a3f; border: 1px solid #bfe9cf; }
+.msg.error { background: #fdecec; color: #b91c1c; border: 1px solid #f6bcbc; }
+.hidden { display: none; }
+
+.actions {
+  margin-top: 14px;
+  display: flex;
+  gap: 10px;
+  justify-content: space-between;
+}
