@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Quiz App - Login</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="card">
+      <h2 class="title">Login</h2>
+      <p class="sub">Enter your username to start the quiz.</p>
+
+      <form id="loginForm" class="form">
+        <label class="label">Username</label>
+        <input type="text" id="username" class="input" placeholder="Enter username" />
+
+        <label class="label">Password (optional)</label>
+        <input type="password" id="password" class="input" placeholder="Enter password (optional)" />
+
+        <button type="submit" class="btn primary">Login</button>
+      </form>
+
+      <p id="errorMsg" class="msg error hidden"></p>
+
+      <div class="row">
+        <a class="link" href="index.html">← Back to Landing</a>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/common.js"></script>
+  <script src="js/login.js"></script>
+</body>
+</html>
