@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Quiz App - Landing</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="card center">
+      <h1 class="title">Welcome to Quiz App</h1>
+      <p class="sub">Test your knowledge with a quick quiz.</p>
+
+      <button class="btn primary" id="attemptBtn">Attempt Quiz</button>
+    </div>
+  </div>
+
+  <script>
+    document.getElementById("attemptBtn").addEventListener("click", () => {
+      window.location.href = "login.html";
+    });
+  </script>
+</body>
+</html>
